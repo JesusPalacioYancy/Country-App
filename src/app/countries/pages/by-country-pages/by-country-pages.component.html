@@ -1,1 +1,20 @@
-<p>by-country-pages works!</p>
+<h2>Por Pais</h2>
+<hr>
+
+<div class="row">
+    <div class="clo">
+        <!-- searchBox -->
+        <search-search-box 
+        placeholder="Desde capital"
+        (onValue)="searchByCountry($event)"
+        ></search-search-box> 
+    </div>
+</div>
+
+<div class="row">
+    <div class="clo">
+        <hr>
+        <countries-table [countries]="countries"></countries-table>
+    </div>
+</div>
+

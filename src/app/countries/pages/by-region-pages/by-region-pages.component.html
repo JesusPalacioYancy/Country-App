@@ -1,1 +1,20 @@
-<p>by-region-pages works!</p>
+<h2>Por Reguion</h2>
+<hr>
+
+<div class="row">
+    <div class="clo">
+        <!-- searchBox -->
+        <search-search-box 
+        placeholder="Desde capital"
+        (onValue)="searchByReguion($event)"
+        ></search-search-box> 
+    </div>
+</div>
+
+<div class="row">
+    <div class="clo">
+        <hr>
+        <countries-table [countries]="countries"></countries-table>
+    </div>
+</div>
+
