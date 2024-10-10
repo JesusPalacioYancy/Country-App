@@ -13,8 +13,8 @@ export class CountriesService {
 
   constructor(private http: HttpClient) { }
 
-  searchCountryByAlphaCode(code: string):Observable<Country | null>{
-    const url = `${this.url}/alpha/${code}`
+  searchCountryByAlphaCode(id: string):Observable<Country | null>{
+    const url = `${this.url}/alpha/${id}`
     return this.http.get<Country[]>( url )
       .pipe(
         map( countries => countries.length > 0 ? countries[0]: null),
