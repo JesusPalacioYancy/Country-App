@@ -2,12 +2,13 @@
 <hr>
 
 <div class="row">
-    <div class="clo">
-        <!-- searchBox -->
-        <search-search-box 
-        placeholder="Desde capital"
-        (onValue)="searchByReguion($event)"
-        ></search-search-box> 
+    <div class="clo text-center">
+        <button
+        class="btn mx-2"
+        (click)="searchByReguion(reguion)"
+        [ngClass]="{'btn-outline-primary' : selectedReguion === reguion }"
+        *ngFor="let reguion of reguions"
+        >{{reguion}}</button>
     </div>
 </div>
 

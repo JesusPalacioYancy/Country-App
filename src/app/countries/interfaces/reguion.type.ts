@@ -1,0 +1,1 @@
+export type Reguion = "Africa"|"America"|"Asia"|"Europe"|"Oceania"| "";

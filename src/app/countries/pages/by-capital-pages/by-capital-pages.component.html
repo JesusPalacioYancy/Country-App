@@ -6,7 +6,8 @@
         <!-- searchBox -->
         <search-search-box 
         placeholder="Desde capital"
-        (onValue)="searchByCapital($event)"
+        (onDebounce)="searchByCapital($event)"
+        [inicialValue]="inicialValue"
         ></search-search-box> 
     </div>
 </div>
